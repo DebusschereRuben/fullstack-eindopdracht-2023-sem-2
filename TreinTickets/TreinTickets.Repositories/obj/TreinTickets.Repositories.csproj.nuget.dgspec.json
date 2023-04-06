@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
+        "projectName": "TreinTickets.Models",
+        "projectPath": "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
+        "packagesPath": "C:\\Users\\Ferre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ferre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj",
+        "projectName": "TreinTickets.Repositories",
+        "projectPath": "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Ferre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ferre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
+                "projectPath": "C:\\Users\\Ferre\\Documents\\school\\3de jaar\\2de sem\\fullstack\\Fullstack Opdracht\\Site\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
