@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj": {}
+    "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj": {}
   },
   "projects": {
-    "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
+    "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
         "projectName": "TreinTickets.Models",
-        "projectPath": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
-        "packagesPath": "C:\\Users\\rubde\\.nuget\\packages\\",
-        "outputPath": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\obj\\",
+        "projectPath": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
+        "packagesPath": "C:\\Users\\Ferre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rubde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ferre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,8 +61,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,21 +70,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj": {
+    "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj",
         "projectName": "TreinTickets.Repositories",
-        "projectPath": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj",
-        "packagesPath": "C:\\Users\\rubde\\.nuget\\packages\\",
-        "outputPath": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\obj\\",
+        "projectPath": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\TreinTickets.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Ferre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rubde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ferre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,8 +98,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
-                "projectPath": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj"
+              "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
+                "projectPath": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj"
               }
             }
           }
@@ -132,8 +131,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -142,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
         }
       }
     }
