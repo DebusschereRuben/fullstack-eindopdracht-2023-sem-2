@@ -13,8 +13,6 @@ namespace TreinTickets.Models.Entities
         public string Naam { get; set; }
         public string Adress { get; set; }
         public double PrijsPerNacht { get; set; }
-        public DateOnly CheckInDatum { get; set; }
-        public DateOnly CheckOutDatum { get; set; }
 
     }
 }
