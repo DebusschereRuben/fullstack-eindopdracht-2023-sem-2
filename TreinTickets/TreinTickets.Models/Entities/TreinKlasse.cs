@@ -9,7 +9,6 @@ namespace TreinTickets.Models.Entities
 {
     public class TreinKlasse
     {
-        [Key]
         public int KlasseId { get; set; }
         public string Type { get; set; }
     }

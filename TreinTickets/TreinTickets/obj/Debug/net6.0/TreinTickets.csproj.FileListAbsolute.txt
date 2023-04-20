@@ -152,3 +152,7 @@ C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTicke
 C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets\obj\Debug\net6.0\TreinTickets.pdb
 C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets\obj\Debug\net6.0\TreinTickets.genruntimeconfig.cache
 C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets\obj\Debug\net6.0\ref\TreinTickets.dll
+C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets\bin\Debug\net6.0\FluentAssertions.dll
+C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

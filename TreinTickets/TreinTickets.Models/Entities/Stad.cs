@@ -10,5 +10,6 @@ namespace TreinTickets.Models.Entities
     {
         public string Naam { get; set; }
         public int StadId { get; set; }
+        public string HotelAPI { get; set; }
     }
 }
