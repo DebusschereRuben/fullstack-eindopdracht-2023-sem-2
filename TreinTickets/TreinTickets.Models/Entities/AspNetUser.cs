@@ -11,8 +11,6 @@ namespace TreinTickets.Models.Entities
             AspNetUserLogins = new HashSet<AspNetUserLogin>();
             AspNetUserTokens = new HashSet<AspNetUserToken>();
             Roles = new HashSet<AspNetRole>();
-            Bestellingen = new HashSet<Bestelling>();
-            Ritten = new HashSet<Rit>();
         }
 
         public string Id { get; set; } = null!;
@@ -35,7 +33,7 @@ namespace TreinTickets.Models.Entities
         public virtual ICollection<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual ICollection<AspNetUserToken> AspNetUserTokens { get; set; }
         public virtual ICollection<Bestelling> Bestellingen { get; set; }
-        public virtual ICollection<Rit> Ritten { get; set; }
+
         public virtual ICollection<AspNetRole> Roles { get; set; }
     }
 }

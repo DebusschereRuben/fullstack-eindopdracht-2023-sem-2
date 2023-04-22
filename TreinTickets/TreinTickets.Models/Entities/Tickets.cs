@@ -9,8 +9,8 @@ namespace TreinTickets.Models.Entities
 {
     public class Tickets
     {
-        public int TicketId { get; set; }
-        public int TreinId { get; set; }
+        public int Id { get; set; }
+        public Rit Rit { get; set; }
         public int RitId { get; set; }
 
     }

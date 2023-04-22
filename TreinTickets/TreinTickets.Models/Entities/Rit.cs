@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,12 +13,18 @@ namespace TreinTickets.Models.Entities
         {
             Treinen = new HashSet<Trein>();
         }
-        public int RitId { get; set; }
-        public int KlantId { get; set; }
-        public int TreinId { get; set; }
-        public int KlasseId { get; set; }
+        public int Id { get; set; }
+        public string KlantId { get; set; }
+
+        public TreinKlasse TreinKlasse { get; set; }
+        public int TreinKlasseId { get; set; }
+
         public int PlaatsNummer { get; set; }
+
+        public Stad VertrekStad { get; set; }
         public int VertrekStadId { get; set; }
+
+        public Stad BestemmingsStad { get; set; }
         public int BestemmingsStadId { get; set; }
 
         public virtual AspNetUser Klant { get; set; }

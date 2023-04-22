@@ -6,30 +6,23 @@ using TreinTickets.Models.Entities;
 
 namespace TreinTickets.Models.Data
 {
-    public partial class TreinTicketsVerkoopDBContext : DbContext
+    public partial class TreinTicketsDbContext : DbContext
     {
-        public TreinTicketsVerkoopDBContext()
+        public TreinTicketsDbContext()
         {
         }
 
-        public TreinTicketsVerkoopDBContext(DbContextOptions<TreinTicketsVerkoopDBContext> options)
+        public TreinTicketsDbContext(DbContextOptions<TreinTicketsDbContext> options)
             : base(options)
         {
         }
-
-        public virtual DbSet<AspNetRole> AspNetRoles { get; set; } = null!;
-        public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; } = null!;
-        public virtual DbSet<AspNetUser> AspNetUsers { get; set; } = null!;
-        public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
-        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
-        public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
-        public virtual DbSet<Bestelling> Bestellingen { get; set; } = null!;
-        public virtual DbSet<Rit> Ritten { get; set; } = null!;
-        public virtual DbSet<Stad> Steden { get; set; } = null!;
-        public virtual DbSet<Tickets> Tickets { get; set; } = null!;
-        public virtual DbSet<Trein> Treinen { get; set; } = null!;
-        public virtual DbSet<TreinKlasse> TreinKlasses { get; set; } = null!;
-        public virtual DbSet<Vakantie> Vakanties { get; set; } = null!;
+        public DbSet<Bestelling> Bestellingen { get; set; }
+        public DbSet<Rit> Ritten { get; set; }
+        public DbSet<Stad> Steden { get; set; }
+        public DbSet<Tickets> Tickets { get; set; }
+        public DbSet<Trein> Treinen { get; set; }
+        public DbSet<TreinKlasse> TreinKlasses { get; set; }
+        public DbSet<Vakantie> Vakanties { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -110,9 +103,13 @@ namespace TreinTickets.Models.Data
 
                 entity.HasIndex(e => e.UserId, "IX_AspNetUserLogins_UserId");
 
-                entity.Property(e => e.LoginProvider).HasMaxLength(128);
+                entity.Property(e => e.LoginProvider)
+                    .HasMaxLength(128)
+                    .HasColumnType("nvarchar(128)");
 
-                entity.Property(e => e.ProviderKey).HasMaxLength(128);
+                entity.Property(e => e.ProviderKey)
+                .HasMaxLength(128)
+                .HasColumnType("nvarchar(128)");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserLogins)
@@ -134,15 +131,15 @@ namespace TreinTickets.Models.Data
 
             modelBuilder.Entity<Bestelling>(entity =>
             {
-                entity.HasKey(e => new { e.BestellingId });
+                entity.HasKey(e => new { e.Id });
 
-                entity.Property(e => e.BestellingId).HasColumnName("BestellingId");
+                entity.Property(e => e.Id).HasColumnName("BestellingId");
 
                 entity.Property(e => e.KlantId).HasColumnName("KlantId");
 
                 entity.Property(e => e.Totaalbedrag).HasColumnName("TotaalBedrag");
 
-                entity.Property(e => e.TicketId).HasColumnName("TicketId");
+                entity.Property(e => e.TicketsId).HasColumnName("TicketId");
 
                 entity.Property(e => e.Status).HasColumnName("Status"); ;
 
@@ -155,26 +152,24 @@ namespace TreinTickets.Models.Data
 
             modelBuilder.Entity<Rit>(entity =>
             {
-                entity.HasKey(e => new { e.RitId });
+                entity.HasKey(e => new { e.Id });
 
-                entity.Property(e => e.RitId).HasColumnName("RitId");
+                entity.Property(e => e.Id).HasColumnName("RitId");
 
                 entity.Property(e => e.KlantId).HasColumnName("KlantId");
 
-                entity.Property(e => e.TreinId).HasColumnName("TreinId");
-
-                entity.Property(e => e.KlasseId).HasColumnName("KlasseId");
+                entity.Property(e => e.TreinKlasseId).HasColumnName("KlasseId");
                 entity.Property(e => e.PlaatsNummer).HasColumnName("PlaatsNummer");
                 entity.Property(e => e.VertrekStadId).HasColumnName("VertrekstadId");
                 entity.Property(e => e.BestemmingsStadId).HasColumnName("EindbestemmingsStadId");
-                
+
             });
 
             modelBuilder.Entity<Stad>(entity =>
             {
-                entity.HasKey(e => new { e.StadId });
+                entity.HasKey(e => new { e.Id });
 
-                entity.Property(e => e.StadId).HasColumnName("StadId");
+                entity.Property(e => e.Id).HasColumnName("StadId");
 
                 entity.Property(e => e.Naam).HasColumnName("Naam");
 
@@ -184,11 +179,9 @@ namespace TreinTickets.Models.Data
 
             modelBuilder.Entity<Tickets>(entity =>
             {
-                entity.HasKey(e => new { e.TicketId });
+                entity.HasKey(e => new { e.Id });
 
-                entity.Property(e => e.TicketId).HasColumnName("TicketId");
-
-                entity.Property(e => e.TreinId).HasColumnName("TreinId");
+                entity.Property(e => e.Id).HasColumnName("TicketId");
 
                 entity.Property(e => e.RitId).HasColumnName("RitId");
 
@@ -196,9 +189,9 @@ namespace TreinTickets.Models.Data
 
             modelBuilder.Entity<Trein>(entity =>
             {
-                entity.HasKey(e => new { e.TreinId });
+                entity.HasKey(e => new { e.Id });
 
-                entity.Property(e => e.TreinId).HasColumnName("TreinId");
+                entity.Property(e => e.Id).HasColumnName("TreinId");
 
                 entity.Property(e => e.VertrekStadId).HasColumnName("Vertrekstad");
 
@@ -209,14 +202,14 @@ namespace TreinTickets.Models.Data
 
                 entity.HasOne(d => d.Rit)
                     .WithMany(p => p.Treinen)
-                    .HasForeignKey(d => d.TreinId);
+                    .HasForeignKey(d => d.Id);
             });
 
             modelBuilder.Entity<TreinKlasse>(entity =>
             {
-                entity.HasKey(e => new { e.KlasseId });
+                entity.HasKey(e => new { e.Id });
 
-                entity.Property(e => e.KlasseId).HasColumnName("KlasseId");
+                entity.Property(e => e.Id).HasColumnName("KlasseId");
 
                 entity.Property(e => e.Type).HasColumnName("Type");
             });

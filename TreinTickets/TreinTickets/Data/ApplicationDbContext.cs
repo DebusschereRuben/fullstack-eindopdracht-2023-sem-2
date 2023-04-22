@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using TreinTickets.Models.Data;
+using TreinTickets.Models.Entities;
 
 namespace TreinTickets.Data
 {
@@ -10,5 +10,7 @@ namespace TreinTickets.Data
             : base(options)
         {
         }
+
+
     }
 }

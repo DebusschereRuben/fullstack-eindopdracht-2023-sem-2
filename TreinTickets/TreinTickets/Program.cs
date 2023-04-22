@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TreinTickets.Data;
-using TreinTickets.Models.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
