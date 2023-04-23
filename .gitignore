@@ -1,0 +1,19 @@
+# Visual Studio files
+*.user
+*.suo
+.vs/
+
+# Compiled source
+/bin/
+/obj/
+
+# Third-party packages
+node_modules/
+
+# ASP.NET specific files
+Web.config
+appSettings.config
+/App_Data/
+
+# NuGet packages
+/packages/
