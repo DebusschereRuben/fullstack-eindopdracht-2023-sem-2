@@ -26,3 +26,17 @@ C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTicke
 C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.pdb
 C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.genruntimeconfig.cache
 C:\Users\Ferre\Desktop\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\ref\TreinTickets.Models.dll
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\bin\Debug\net6.0\TreinTickets.Models.deps.json
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\bin\Debug\net6.0\TreinTickets.Models.runtimeconfig.json
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\bin\Debug\net6.0\TreinTickets.Models.dll
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\bin\Debug\net6.0\TreinTickets.Models.pdb
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.csproj.AssemblyReference.cache
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.AssemblyInfoInputs.cache
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.AssemblyInfo.cs
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.csproj.CoreCompileInputs.cache
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.dll
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\refint\TreinTickets.Models.dll
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.pdb
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\TreinTickets.Models.genruntimeconfig.cache
+C:\3SD\2e jaars vakken\full stack\sem 2 - 2023 - trein\fullstack-eindopdracht-2023-sem-2\TreinTickets\TreinTickets.Models\obj\Debug\net6.0\ref\TreinTickets.Models.dll

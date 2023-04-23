@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {}
+    "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
+    "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
+        "projectUniqueName": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
         "projectName": "TreinTickets.Models",
-        "projectPath": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
-        "packagesPath": "C:\\Users\\Ferre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\obj\\",
+        "projectPath": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\TreinTickets.Models.csproj",
+        "packagesPath": "C:\\Users\\rubde\\.nuget\\packages\\",
+        "outputPath": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ferre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rubde\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +61,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -69,7 +73,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -78,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
         }
       }
     }

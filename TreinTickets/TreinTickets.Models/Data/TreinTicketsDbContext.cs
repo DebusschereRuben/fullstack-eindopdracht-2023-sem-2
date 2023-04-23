@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
 using TreinTickets.Models.Entities;
 
 namespace TreinTickets.Models.Data
@@ -29,8 +30,17 @@ namespace TreinTickets.Models.Data
             if (!optionsBuilder.IsConfigured)
             {
 
-                //todo: connectionstring aanpassen voor veiligheid redenen (Ruben)
-                optionsBuilder.UseSqlServer("Server=.\\SQL19_VIVES; Database=TreinTicketsDB; Trusted_Connection=True; MultipleActiveResultSets=true;");
+                //connection string van azure ophalen uit appsettings.json
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                    .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+
+                
+                optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+
+                //originele manier
+                //optionsBuilder.UseSqlServer("Server=.\\SQL19_VIVES; Database=TreinTicketsDB; Trusted_Connection=True; MultipleActiveResultSets=true;");
             }
         }
 
