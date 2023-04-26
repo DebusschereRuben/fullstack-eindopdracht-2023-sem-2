@@ -16,7 +16,7 @@ namespace TreinTickets.Models.Entities
 
         public Stad BestemmingsStad { get; set; }
         public int BestemmingsStadId { get; set; }
-        public DateTime Duur { get; set; }
+        public double Duur { get; set; }
         public int AantalZitPlaatsen { get; set; }
 
         public virtual Rit Rit { get; set; }
