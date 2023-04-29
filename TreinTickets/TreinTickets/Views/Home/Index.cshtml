@@ -1,9 +1,9 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<@using Microsoft.AspNetCore.Mvc.Localization
+@*The IViewLocalizer service provides localized strings for a view. The ViewLocalizer class implements this interface and finds the resource location from the view file path.*@
+@inject IViewLocalizer Localizer
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to TrainTicketSales.com</h1>
+    <h1 class="display-4">@Localizer["Welcome"].Value</h1>
     <img src=~/img/TreinImage.jpg style="width:450px; height:300px"/>
 </div>
 

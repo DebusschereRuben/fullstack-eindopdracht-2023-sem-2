@@ -14,11 +14,17 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TreinTickets.Models\TreinTickets.Models.csproj" />
     <ProjectReference Include="..\TreinTickets.Services\TreinTickets.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Controllers\" />
+    <Folder Include="Resources\ViewModels\" />
   </ItemGroup>
 
 </Project>
