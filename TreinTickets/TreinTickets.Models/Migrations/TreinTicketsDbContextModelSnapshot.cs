@@ -281,6 +281,9 @@ namespace TreinTickets.Models.Migrations
                         .HasColumnType("int")
                         .HasColumnName("KlasseId");
 
+                    b.Property<DateTime>("VertrekDag")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("VertrekStadId")
                         .HasColumnType("int")
                         .HasColumnName("VertrekstadId");
@@ -356,8 +359,8 @@ namespace TreinTickets.Models.Migrations
                         .HasColumnType("int")
                         .HasColumnName("BestemmingsStad");
 
-                    b.Property<DateTime>("Duur")
-                        .HasColumnType("datetime2")
+                    b.Property<double>("Duur")
+                        .HasColumnType("float")
                         .HasColumnName("Duur");
 
                     b.Property<int>("VertrekStadId")

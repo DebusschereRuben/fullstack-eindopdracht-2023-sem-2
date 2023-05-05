@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Localization;
 using System.Diagnostics;
 using TreinTickets.Models;
+using TreinTickets.Models.Data;
+using TreinTickets.Models.Entities;
 
 namespace TreinTickets.Controllers
 {
@@ -10,15 +13,29 @@ namespace TreinTickets.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IStringLocalizer<HomeController> _localizer;
+        private readonly TreinTicketsDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
+        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer, TreinTicketsDbContext context)
         {
             _logger = logger;
             _localizer = localizer;
+            _context = context; 
         }
 
-        public IActionResult Index()
+        public IActionResult Index()//home pagina
         {
+            return View();
+        }
+
+        public IActionResult BestelPagina()//invullen form
+        {
+            var steden = _context.Steden.ToList();
+            var stadList = new SelectList(steden, "Id", "Naam");
+            ViewBag.StadList = stadList;
+
+            
+
+
             return View();
         }
 

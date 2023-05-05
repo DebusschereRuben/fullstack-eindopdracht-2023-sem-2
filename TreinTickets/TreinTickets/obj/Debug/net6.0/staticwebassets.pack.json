@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\TreinImage.jpg",
+      "PackagePath": "staticwebassets\\img\\TreinImage.jpg"
+    },
+    {
       "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\hotel.png",
       "PackagePath": "staticwebassets\\img\\hotel.png"
     },

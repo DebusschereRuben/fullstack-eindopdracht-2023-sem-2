@@ -27,7 +27,10 @@ namespace TreinTickets.Models.Entities
         public Stad BestemmingsStad { get; set; }
         public int BestemmingsStadId { get; set; }
 
+        public DateTime VertrekDag { get; set; }
+
         public virtual AspNetUser Klant { get; set; }
         public virtual ICollection<Trein> Treinen { get; set; }
     }
 }
+
