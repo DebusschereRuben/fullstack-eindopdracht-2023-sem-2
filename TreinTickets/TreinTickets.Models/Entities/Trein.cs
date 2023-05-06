@@ -10,11 +10,11 @@ namespace TreinTickets.Models.Entities
     {
         public int Id { get; set; }
 
-        public Stad VertrekStad { get; set; }
+        public TreinKlasse VertrekStad { get; set; }
         public int VertrekStadId { get; set; }
         public DateTime Vertrektijd { get; set; }
 
-        public Stad BestemmingsStad { get; set; }
+        public TreinKlasse BestemmingsStad { get; set; }
         public int BestemmingsStadId { get; set; }
         public double Duur { get; set; }
         public int AantalZitPlaatsen { get; set; }

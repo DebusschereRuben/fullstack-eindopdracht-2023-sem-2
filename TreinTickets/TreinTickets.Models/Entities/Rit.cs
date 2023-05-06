@@ -21,16 +21,18 @@ namespace TreinTickets.Models.Entities
 
         public int PlaatsNummer { get; set; }
 
-        public Stad VertrekStad { get; set; }
+        public TreinKlasse VertrekStad { get; set; }
         public int VertrekStadId { get; set; }
 
-        public Stad BestemmingsStad { get; set; }
+        public TreinKlasse BestemmingsStad { get; set; }
         public int BestemmingsStadId { get; set; }
 
         public DateTime VertrekDag { get; set; }
 
         public virtual AspNetUser Klant { get; set; }
         public virtual ICollection<Trein> Treinen { get; set; }
+
+        public virtual Tickets TicketsnrNavigation { get; set; }
     }
 }
 

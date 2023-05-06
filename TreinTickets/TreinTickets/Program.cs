@@ -3,6 +3,11 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using TreinTickets.Data;
 using TreinTickets.Models.Data;
+using TreinTickets.Models.Entities;
+using TreinTickets.Repositories;
+using TreinTickets.Repositories.Interfaces;
+using TreinTickets.Services;
+using TreinTickets.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +23,17 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<TreinTicketsDbContext>();
 builder.Services.AddControllersWithViews();
+
+//Dependency Injection
+builder.Services.AddTransient<IService<Stad>, StadService>();
+builder.Services.AddTransient<IDAO<Stad>, StadDAO>();
+
+builder.Services.AddTransient<IService<Rit>, RitService>();
+builder.Services.AddTransient<IDAO<Rit>, RitDAO>();
+
+builder.Services.AddTransient<IService<TreinKlasse>, KlasseService>();
+builder.Services.AddTransient<IDAO<TreinKlasse>, KlasseDAO>();
+
 
 //-------------Localization------------------
 // in welke map zitten de resources

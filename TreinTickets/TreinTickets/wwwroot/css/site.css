@@ -16,3 +16,48 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.IconBox {
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.Icon {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+}
+
+.IconText {
+    margin-right: auto;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 115px;
+
+}
+
+.ImgSpoor {
+    height: 100vh;
+    width:100px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.column1, .column3 {
+    width: 100px;
+}
+
+.column2 {
+    flex: 1;
+    margin-left: 80px;
+    margin-right:80px
+}

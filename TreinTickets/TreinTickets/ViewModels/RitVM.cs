@@ -6,8 +6,8 @@ namespace TreinTickets.ViewModels
     {
         public TreinKlasse TreinKlasse { get; set; }
         public int PlaatsNummer { get; set; }
-        public Stad VertrekStad { get; set; }
-        public Stad BestemmingsStad { get; set; }
+        public TreinKlasse VertrekStad { get; set; }
+        public TreinKlasse BestemmingsStad { get; set; }
         public DateTime VertrekDag { get; set; }
     }
 }

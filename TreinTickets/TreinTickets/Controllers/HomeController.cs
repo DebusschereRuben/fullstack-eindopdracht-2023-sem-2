@@ -2,8 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Localization;
-using System.Diagnostics;
-using TreinTickets.Models;
+
 using TreinTickets.Models.Data;
 using TreinTickets.Models.Entities;
 
@@ -27,27 +26,9 @@ namespace TreinTickets.Controllers
             return View();
         }
 
-        public IActionResult BestelPagina()//invullen form
-        {
-            var steden = _context.Steden.ToList();
-            var stadList = new SelectList(steden, "Id", "Naam");
-            ViewBag.StadList = stadList;
-
-            
-
-
-            return View();
-        }
-
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
         [HttpPost]

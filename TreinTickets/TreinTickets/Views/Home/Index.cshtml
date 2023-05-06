@@ -1,9 +1,30 @@
-﻿<@using Microsoft.AspNetCore.Mvc.Localization
+﻿@using Microsoft.AspNetCore.Mvc.Localization
 @*The IViewLocalizer service provides localized strings for a view. The ViewLocalizer class implements this interface and finds the resource location from the view file path.*@
 @inject IViewLocalizer Localizer
 
-<div class="text-center">
-    <h1 class="display-4">@Localizer["Welcome"].Value</h1>
-    <img src=~/img/TreinImage.jpg style="width:450px; height:300px"/>
+<div class="wrapper">
+    <div class="column1">
+        <img src="~/img/treinspoor.jpg" alt="treinspoor" class="ImgSpoor"/>
+    </div>
+    <div class="column2">
+    <div class="text-center">
+        <h1 class="display-4">@Localizer["Welcome"].Value</h1>
+    </div>
+    <div class="IconBox">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Bestel" asp-action="Search">
+            <img src=~/img/TreinIcon.png class="Icon" alt="Trein boeken"/>
+            <span class="IconText">@Localizer["Book"].Value</span>
+        </a>
+    </div>
+    <div class="IconBox">
+        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">
+            <img src=~/img/shoppingcart.png class="Icon" alt="Bestellingen bekijken"/>
+            <span class="IconText">@Localizer["Orders"].Value</span>
+        </a>
+    </div>
+    </div>
+    <div class="column3">
+        <img src="~/img/treinspoor.jpg" alt="treinspoor" class="ImgSpoor"/>
+    </div>
 </div>
 
