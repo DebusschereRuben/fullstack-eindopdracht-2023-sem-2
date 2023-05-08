@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TreinTickets.Models.Data;
 
@@ -11,9 +12,10 @@ using TreinTickets.Models.Data;
 namespace TreinTickets.Models.Migrations
 {
     [DbContext(typeof(TreinTicketsDbContext))]
-    partial class TreinTicketsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230507134953_Extramigration")]
+    partial class Extramigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -340,7 +342,8 @@ namespace TreinTickets.Models.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RitId");
+                    b.HasIndex("RitId")
+                        .IsUnique();
 
                     b.ToTable("Tickets");
                 });
@@ -501,7 +504,7 @@ namespace TreinTickets.Models.Migrations
 
             modelBuilder.Entity("TreinTickets.Models.Entities.Rit", b =>
                 {
-                    b.HasOne("TreinTickets.Models.Entities.Stad", "BestemmingsStad")
+                    b.HasOne("TreinTickets.Models.Entities.TreinKlasse", "BestemmingsStad")
                         .WithMany()
                         .HasForeignKey("BestemmingsStadId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -519,7 +522,7 @@ namespace TreinTickets.Models.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TreinTickets.Models.Entities.Stad", "VertrekStad")
+                    b.HasOne("TreinTickets.Models.Entities.TreinKlasse", "VertrekStad")
                         .WithMany()
                         .HasForeignKey("VertrekStadId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -537,8 +540,8 @@ namespace TreinTickets.Models.Migrations
             modelBuilder.Entity("TreinTickets.Models.Entities.Tickets", b =>
                 {
                     b.HasOne("TreinTickets.Models.Entities.Rit", "Rit")
-                        .WithMany()
-                        .HasForeignKey("RitId")
+                        .WithOne("TicketsnrNavigation")
+                        .HasForeignKey("TreinTickets.Models.Entities.Tickets", "RitId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -547,7 +550,7 @@ namespace TreinTickets.Models.Migrations
 
             modelBuilder.Entity("TreinTickets.Models.Entities.Trein", b =>
                 {
-                    b.HasOne("TreinTickets.Models.Entities.Stad", "BestemmingsStad")
+                    b.HasOne("TreinTickets.Models.Entities.TreinKlasse", "BestemmingsStad")
                         .WithMany()
                         .HasForeignKey("BestemmingsStadId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -559,7 +562,7 @@ namespace TreinTickets.Models.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TreinTickets.Models.Entities.Stad", "VertrekStad")
+                    b.HasOne("TreinTickets.Models.Entities.TreinKlasse", "VertrekStad")
                         .WithMany()
                         .HasForeignKey("VertrekStadId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -590,6 +593,9 @@ namespace TreinTickets.Models.Migrations
 
             modelBuilder.Entity("TreinTickets.Models.Entities.Rit", b =>
                 {
+                    b.Navigation("TicketsnrNavigation")
+                        .IsRequired();
+
                     b.Navigation("Treinen");
                 });
 #pragma warning restore 612, 618

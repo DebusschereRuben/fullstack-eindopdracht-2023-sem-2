@@ -1,0 +1,53 @@
+﻿@model TreinTickets.ViewModels.ReisCreateVM
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="container">
+    <h1>Reis Boeken</h1>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TreinKlasseId" class="control-label"></label>
+                <select asp-for="TreinKlasseId" class="form-control" asp-items=@Model.TreinKlasses>
+                    <option>Please select a class</option>
+                </select>
+                <span asp-validation-for="TreinKlasseId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VertrekStadId" class="control-label"></label>
+                <select asp-for="VertrekStadId" class="form-control" asp-items=@Model.Vertreksteden>
+                    <option>Please select a city</option>
+                </select>
+                <span asp-validation-for="VertrekStadId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BestemmingsStadId" class="control-label"></label>
+                <select asp-for="BestemmingsStadId" class="form-control" asp-items=@Model.Bestemmingssteden>
+                    <option>Please select a city</option>
+                </select>
+                <span asp-validation-for="BestemmingsStadId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VertrekDag" class="control-label"></label>
+                <input asp-for="VertrekDag" class="form-control" value="@Model.VertrekDag.ToString("yyyy-MM-ddTHH:mm")"/>
+                <span asp-validation-for="VertrekDag" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -17,6 +17,15 @@ body {
   margin-bottom: 60px;
 }
 
+.layout {
+    width: 100%;
+}
+
+.Title {
+    font-weight: bold;
+    font-size: 65px;
+}
+
 .IconBox {
     border-width: thick;
     border-color: black;
@@ -42,18 +51,20 @@ body {
 }
 
 .ImgSpoor {
-    height: 100vh;
-    width:100px;
+    height: 100%;
+    width:130px;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100%;
 }
 
 .column1, .column3 {
-    width: 100px;
+    width: 130px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .column2 {

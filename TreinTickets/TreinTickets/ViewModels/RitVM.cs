@@ -1,13 +1,18 @@
-﻿using TreinTickets.Models.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using TreinTickets.Models.Entities;
 
 namespace TreinTickets.ViewModels
 {
     public class RitVM
     {
-        public TreinKlasse TreinKlasse { get; set; }
+        public string? TreinKlasse { get; set; }
+
         public int PlaatsNummer { get; set; }
-        public TreinKlasse VertrekStad { get; set; }
-        public TreinKlasse BestemmingsStad { get; set; }
+
+        public string? VertrekStad { get; set; }
+
+        public string? BestemmingsStad { get; set; }
+
         public DateTime VertrekDag { get; set; }
     }
 }

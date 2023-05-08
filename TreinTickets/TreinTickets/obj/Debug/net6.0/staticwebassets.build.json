@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9KcNMFps9KvoplZKc68hC60UlUWr60WAjLTcKoVsxZA=",
+  "Hash": "LFuDB4hA31+KASjjz6OoDv2+M6jd5P+elm+SOfG2B3s=",
   "Source": "TreinTickets",
   "BasePath": "_content/TreinTickets",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\HomeIcon.png",
+      "SourceId": "TreinTickets",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\",
+      "BasePath": "_content/TreinTickets",
+      "RelativePath": "img/HomeIcon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\HomeIcon.png"
+    },
+    {
       "Identity": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\hotel.png",
       "SourceId": "TreinTickets",
       "SourceType": "Discovered",
@@ -1120,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\hotel.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\InfoIcon.png",
+      "SourceId": "TreinTickets",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\",
+      "BasePath": "_content/TreinTickets",
+      "RelativePath": "img/InfoIcon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\InfoIcon.png"
     },
     {
       "Identity": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\profile.png",
@@ -1154,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\shoppingcart.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\StedenOpKaartImg.png",
+      "SourceId": "TreinTickets",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\",
+      "BasePath": "_content/TreinTickets",
+      "RelativePath": "img/StedenOpKaartImg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\StedenOpKaartImg.png"
     },
     {
       "Identity": "C:\\Users\\Ferre\\Desktop\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\TreinIcon.png",

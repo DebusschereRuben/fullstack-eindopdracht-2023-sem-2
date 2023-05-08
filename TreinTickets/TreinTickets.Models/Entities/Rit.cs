@@ -33,6 +33,7 @@ namespace TreinTickets.Models.Entities
         public virtual ICollection<Trein> Treinen { get; set; }
 
         public virtual Tickets TicketsnrNavigation { get; set; }
+
     }
 }
 

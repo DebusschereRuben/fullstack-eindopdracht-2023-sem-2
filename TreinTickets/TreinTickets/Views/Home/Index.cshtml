@@ -7,21 +7,27 @@
         <img src="~/img/treinspoor.jpg" alt="treinspoor" class="ImgSpoor"/>
     </div>
     <div class="column2">
-    <div class="text-center">
-        <h1 class="display-4">@Localizer["Welcome"].Value</h1>
-    </div>
-    <div class="IconBox">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Bestel" asp-action="Search">
-            <img src=~/img/TreinIcon.png class="Icon" alt="Trein boeken"/>
-            <span class="IconText">@Localizer["Book"].Value</span>
-        </a>
-    </div>
-    <div class="IconBox">
-        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">
-            <img src=~/img/shoppingcart.png class="Icon" alt="Bestellingen bekijken"/>
-            <span class="IconText">@Localizer["Orders"].Value</span>
-        </a>
-    </div>
+        <div class="text-center">
+            <h1 class="Title">@Localizer["Welcome"].Value</h1>
+        </div>
+        <div class="IconBox">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Reis" asp-action="Search">
+                <img src=~/img/TreinIcon.png class="Icon" alt="Trein boeken"/>
+                <span class="IconText">@Localizer["Book"].Value</span>
+            </a>
+        </div>
+        <div class="IconBox">
+            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">
+                <img src=~/img/shoppingcart.png class="Icon" alt="Bestellingen bekijken"/>
+                <span class="IconText">@Localizer["Orders"].Value</span>
+            </a>
+        </div>
+        <div class="IconBox">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Info">
+                <img src=~/img/InfoIcon.png class="Icon" alt="info over site"/>
+                <span class="IconText">@Localizer["Info"].Value</span>
+            </a>
+        </div>
     </div>
     <div class="column3">
         <img src="~/img/treinspoor.jpg" alt="treinspoor" class="ImgSpoor"/>
