@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\HomeIcon.png",
+      "PackagePath": "staticwebassets\\img\\HomeIcon.png"
+    },
+    {
+      "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\InfoIcon.png",
+      "PackagePath": "staticwebassets\\img\\InfoIcon.png"
+    },
+    {
+      "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\StedenOpKaartImg.png",
+      "PackagePath": "staticwebassets\\img\\StedenOpKaartImg.png"
+    },
+    {
+      "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\TreinIcon.png",
+      "PackagePath": "staticwebassets\\img\\TreinIcon.png"
+    },
+    {
       "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\TreinImage.jpg",
       "PackagePath": "staticwebassets\\img\\TreinImage.jpg"
     },
@@ -27,6 +43,10 @@
     {
       "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\shoppingcart.png",
       "PackagePath": "staticwebassets\\img\\shoppingcart.png"
+    },
+    {
+      "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\img\\treinspoor.jpg",
+      "PackagePath": "staticwebassets\\img\\treinspoor.jpg"
     },
     {
       "Id": "C:\\3SD\\2e jaars vakken\\full stack\\sem 2 - 2023 - trein\\fullstack-eindopdracht-2023-sem-2\\TreinTickets\\TreinTickets\\wwwroot\\js\\site.js",

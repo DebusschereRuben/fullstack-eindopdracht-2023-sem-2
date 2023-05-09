@@ -14,7 +14,6 @@ namespace TreinTickets.Models.Entities
             Treinen = new HashSet<Trein>();
         }
         public int Id { get; set; }
-        public string KlantId { get; set; }
 
         public TreinKlasse TreinKlasse { get; set; }
         public int TreinKlasseId { get; set; }
@@ -33,7 +32,6 @@ namespace TreinTickets.Models.Entities
         public virtual ICollection<Trein> Treinen { get; set; }
 
         public virtual Tickets TicketsnrNavigation { get; set; }
-
     }
 }
 

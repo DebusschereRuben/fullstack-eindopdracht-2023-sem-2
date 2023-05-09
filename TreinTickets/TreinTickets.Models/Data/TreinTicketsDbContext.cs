@@ -166,8 +166,6 @@ namespace TreinTickets.Models.Data
 
                 entity.Property(e => e.Id).HasColumnName("RitId");
 
-                entity.Property(e => e.KlantId).HasColumnName("KlantId");
-
                 entity.Property(e => e.TreinKlasseId).HasColumnName("KlasseId");
                 entity.Property(e => e.PlaatsNummer).HasColumnName("PlaatsNummer");
                 entity.Property(e => e.VertrekStadId).HasColumnName("VertrekstadId");
