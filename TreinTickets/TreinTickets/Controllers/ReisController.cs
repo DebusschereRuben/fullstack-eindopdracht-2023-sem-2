@@ -7,12 +7,13 @@ using TreinTickets.Models.Data;
 using TreinTickets.Models.Entities;
 using TreinTickets.Services.Interfaces;
 using TreinTickets.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace TreinTickets.Controllers
 {
     public class ReisController : Controller
     {
-        private readonly TreinTicketsDbContext _context;
+        private TreinTicketsDbContext _context;
         private IService<Stad> _stadService;
         private IService<Rit> _ritService;
         private IService<TreinKlasse> _klasseService;
@@ -60,24 +61,20 @@ namespace TreinTickets.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Search(ReisCreateVM reisModel)
         {
-            if (ModelState.IsValid) 
+            if (ModelState.IsValid)
             {
-                var reis = _mapper.Map<Rit>(reisModel);
-                await _ritService.Add(reis);
-                return View("Ritten");
+                var treinen = _context.Treinen.ToList();
+                if (treinen.Count > 0)
+                {
+                    return View("TreinList", treinen);
+                }
+                else
+                {
+                    ModelState.AddModelError("", "No trains found that match the search criteria");
+                }
             }
-
-            reisModel.Vertreksteden = new SelectList(await _stadService.GetAll()
-                , "Id", "Naam", reisModel.VertrekStadId);
-
-            reisModel.Bestemmingssteden = new SelectList(await _stadService.GetAll()
-                , "Id", "Naam", reisModel.BestemmingsStadId);
-
-            reisModel.TreinKlasses = new SelectList(await _klasseService.GetAll()
-                , "Id", "Type", reisModel.TreinKlasseId);
-
-            reisModel.VertrekDag = DateTime.Now;
-
+            reisModel.Vertreksteden = new SelectList(_context.Steden, "Id", "Naam", reisModel.VertrekStadId);
+            reisModel.Bestemmingssteden = new SelectList(_context.Steden, "Id", "Naam", reisModel.BestemmingsStadId);
             return View(reisModel);
         }
     }

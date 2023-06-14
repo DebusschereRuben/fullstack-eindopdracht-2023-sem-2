@@ -17,13 +17,13 @@ namespace TreinTickets.Models.Data
             : base(options)
         {
         }
-        public DbSet<Bestelling> Bestellingen { get; set; }
-        public DbSet<Rit> Ritten { get; set; }
-        public DbSet<Stad> Steden { get; set; }
-        public DbSet<Tickets> Tickets { get; set; }
-        public DbSet<Trein> Treinen { get; set; }
-        public DbSet<TreinKlasse> TreinKlasses { get; set; }
-        public DbSet<Vakantie> Vakanties { get; set; }
+        public DbSet<Bestelling>? Bestellingen { get; set; }
+        public DbSet<Rit>? Ritten { get; set; }
+        public DbSet<Stad>? Steden { get; set; }
+        public DbSet<Tickets>? Tickets { get; set; }
+        public DbSet<Trein>? Treinen { get; set; }
+        public DbSet<TreinKlasse>? TreinKlasses { get; set; }
+        public DbSet<Vakantie>? Vakanties { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
